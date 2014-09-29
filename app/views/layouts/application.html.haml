@@ -1,0 +1,13 @@
+%html
+%head
+  %title Beerbank
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+%body
+  %section.section-left
+    = link_to 'Home', welcome_index_path
+  %section.section-center
+    = yield
+

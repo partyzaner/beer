@@ -1,0 +1,11 @@
+#header
+  %h1 Create point
+#content
+  = form_for :articles, method: :post, id: 'create' do |f|
+    = f.label :post, :lat
+    = f.text_field :lat
+    <br />
+    = f.label :post, :lng
+    = f.text_field :lng
+    #submit
+    = f.submit 'Submit'

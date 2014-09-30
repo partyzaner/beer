@@ -1,4 +1,8 @@
 #header
   %h1 Haml index page
 #content
-  = @point.inspect
+  = label :post, 'Lat'
+  = @point.lat
+  = label :post, 'Lng'
+  = @point.lng
+  = button_to 'Delete', article_path, method: :delete

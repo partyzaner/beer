@@ -1,13 +1,22 @@
 #header
-  %h1 Haml index page
+  %h1 Points list
 #content
-  = form_for :articles, method: :post, id: 'create' do |f|
-    = f.label :post, :lat
-    = f.text_field :lat
-    <br />
-    = f.label :post, :lng
-    = f.text_field :lng
-    #submit
-    = f.submit 'Submit'
+  = button_to 'Create point', new_article_path, method: :get
+  %table.points
+    %tr
+      %th
+        id
+      %th
+        lat
+      %th
+        lng
+    - @points.each do |point|
+      %tr
+        %td
+          = link_to point.id, article_path(point)
+        %td
+          = point.lat
+        %td
+          = point.lng
 #footer
   = link_to 'To welcome page', welcome_index_path

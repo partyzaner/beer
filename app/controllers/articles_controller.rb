@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
     # @point = Point.index(lat:53.91, lng:27.6).save
+    @points = Point.all
   end
 
   def create
@@ -12,6 +13,12 @@ class ArticlesController < ApplicationController
 
   def show
     @point = Point.find(params[:id])
+  end
+
+  def destroy
+    @point = Point.find(params[:id])
+    @point.destroy
+    redirect_to articles_path
   end
 
   private

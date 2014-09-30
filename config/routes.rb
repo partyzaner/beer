@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'beermap/index'
 
   get 'welcome/index'
 
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :articles
+  resources :map
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

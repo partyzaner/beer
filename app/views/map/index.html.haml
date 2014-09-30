@@ -1,0 +1,10 @@
+%head
+
+%body
+  %h1 Beer Map
+  %div.map_wrapper
+    - @points.each do |point|
+      = point.lat
+      = point.lng
+      <br />
+    %div#map{data: {markers: @hash.to_json}}

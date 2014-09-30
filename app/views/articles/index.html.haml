@@ -1,0 +1,13 @@
+#header
+  %h1 Haml index page
+#content
+  = form_for :articles, method: :post, id: 'create' do |f|
+    = f.label :post, :lat
+    = f.text_field :lat
+    <br />
+    = f.label :post, :lng
+    = f.text_field :lng
+    #submit
+    = f.submit 'Submit'
+#footer
+  = link_to 'To welcome page', welcome_index_path

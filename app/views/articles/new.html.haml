@@ -1,9 +1,0 @@
-#header
-  %h1 Haml new page
-#content
-  = form_tag new_article_path, method: :post, id: 'new_message' do
-    = text_field 'Subject', ''
-    #submit
-    = submit_tag 'Submit'
-#footer
-  = link_to 'To welcome page', welcome_index_path

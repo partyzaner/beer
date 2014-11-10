@@ -5,7 +5,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    #render plain: params[:articles].inspect
     @point = Point.new(permitted_params)
     @point.save
     redirect_to article_path(@point)

@@ -1,7 +1,7 @@
 #header
   %h1 Create point
 #content
-  = form_for :articles, method: :post, id: 'create' do |f|
+  = form_for :articles, method: :post, id: 'create', url: articles_path do |f|
     = f.label :post, :lat
     = f.text_field :lat
     <br />

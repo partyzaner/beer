@@ -1,6 +1,8 @@
 %html
   %head
-    %title Beerbank
+    %title
+      = yield :page_title unless :page_title
+
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -12,7 +14,7 @@
     %section.section-left
       %ul
         %li
-          = link_to 'Home', welcome_index_path
+          = link_to 'Add point', welcome_index_path
         %li
           = link_to 'Points', articles_path
         %li

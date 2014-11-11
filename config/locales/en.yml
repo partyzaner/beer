@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+
+  titles: "BEERMAP"
+    articles:
+      show_title: "Beer Point"

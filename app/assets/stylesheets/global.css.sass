@@ -1,3 +1,7 @@
+//= depend_on_asset "pol-img.png"
+
+$sprite: url( image-path("pol-img.png") )
+
 html body
   font-size: 13px
   font-family: 'Open Sans', sans-serif
@@ -40,7 +44,7 @@ html body
     left: 230px
     right: 0
     z-index: 1
-    background: #808380
+    background: #bbccbb
   .section-footer
     position: absolute
     top: auto !important
@@ -56,8 +60,7 @@ html body
     right: 0
     height: 100
     text-align: center
-    //padding-left: 250px
-    background: #60aabb
+    background: #60aabb $sprite
   .container-toolbar
     border-bottom: 1px solid #d7dde3
     padding: 6px 16px

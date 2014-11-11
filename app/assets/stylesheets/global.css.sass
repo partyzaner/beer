@@ -20,11 +20,11 @@ html body
     bottom: 0
     height: auto !important
     position: absolute
-    top: 0
+    top: 100px
     overflow-x: hidden
     overflow-y: auto
     width: 230px
-    border-top: 1px solid #33335a
+    border-top: 1px solid #d7dde3
     z-index: 2
     > ul
       > li
@@ -32,23 +32,32 @@ html body
           color: #fff
           text-decoration: none
           margin: 20 0 0 20
-  .section-footer
-    position: absolute
-    top: auto !important
-    bottom: 0
-    left: 230px
-    height: 60px
-    background: #555555
-
   .section-center
     border-top: 1px solid #d7dde3
     position: absolute
-    top: 0
+    top: 100px
     bottom: 60
     left: 230px
     right: 0
     z-index: 1
     background: #808380
+  .section-footer
+    position: absolute
+    top: auto !important
+    bottom: 0
+    left: 230px
+    right: 0
+    height: 60px
+    background: #555555
+  .section-header
+    position: absolute
+    top: auto !important
+    left: 0
+    right: 0
+    height: 100
+    text-align: center
+    //padding-left: 250px
+    background: #60aabb
   .container-toolbar
     border-bottom: 1px solid #d7dde3
     padding: 6px 16px
